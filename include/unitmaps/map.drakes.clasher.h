@@ -1,0 +1,23 @@
+// "filename.png", texOffsetX, texOffsetY, flags, texW, texH, trimmedX, trimmedY, originalW, originalH, UNITMAP_DRAKES_CLASHERID
+addMapEntry("units/drakes/clasher-blade-1.png", 256, 0, 0, 56, 55, 26, 26, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-2.png", 130, 193, 0, 64, 61, 26, 25, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-3.png", 0, 0, 0, 63, 79, 31, 8, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-4.png", 63, 0, 0, 61, 80, 28, 13, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-5.png", 63, 138, 0, 67, 68, 28, 28, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-6.png", 124, 0, 0, 48, 76, 27, 24, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-defend-1.png", 414, 154, 0, 52, 52, 22, 27, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade-defend-2.png", 63, 206, 0, 55, 50, 19, 28, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-blade.png", 362, 108, 0, 52, 53, 25, 26, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-defend-1.png", 362, 55, 0, 52, 53, 22, 26, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-defend-2.png", 0, 205, 0, 58, 51, 16, 27, 100, 100, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-s-2.png", 256, 55, 0, 58, 53, 13, 12, 72, 72, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-s-3.png", 217, 0, 0, 36, 74, 27, 48, 72, 122, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-s-4.png", 172, 0, 0, 45, 73, 19, 55, 72, 128, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-s-5.png", 0, 134, 0, 44, 71, 19, 51, 72, 122, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-s-6.png", 314, 55, 0, 48, 58, 26, 30, 74, 88, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-1.png", 0, 79, 0, 58, 55, 11, 11, 72, 72, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-2.png", 194, 193, 0, 60, 56, 10, 10, 72, 72, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-3.png", 146, 80, 0, 75, 49, 33, 31, 108, 80, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-4.png", 63, 80, 0, 83, 58, 45, 43, 128, 102, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-5.png", 130, 138, 0, 81, 55, 43, 41, 124, 98, UNITMAP_DRAKES_CLASHER);
+addMapEntry("units/drakes/clasher-spear-se-6.png", 414, 108, 0, 59, 46, 13, 22, 72, 72, UNITMAP_DRAKES_CLASHER);

@@ -1,0 +1,11 @@
+/*
+ *  prefix.pch
+ *  wesnoth
+ *
+ *  Created by Kyle Poole on 12/13/09.
+ *
+ */
+
+#ifndef DISABLE_OPENFEINT
+	#import "OpenFeintPrefix.pch"
+#endif
