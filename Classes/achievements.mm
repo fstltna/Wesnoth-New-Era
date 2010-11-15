@@ -42,8 +42,8 @@ std::string names[] = { "Bloodied", "Slayer", "Battle Master", "Bone Crusher", "
 	"Heroic Unit", "Fearless Leader", "Beserk", "Rampage", "Proficient Commander", "Great General", "Divine Blessing", "Lightning Quick Blades",
 	"Recruit of Wesnoth", "Defender of Wesnoth", "Hero of Wesnoth", "Champion of Wesnoth"};
 
-NSString* ids[] = { @"112754", @"112764", @"112774", @"112784", @"112794", @"112804", @"112814", @"112824", @"112844", @"112904", @"113334",
-	@"113344", @"113354", @"113364", @"113374", @"113384", @"113394", @"113404", @"113414", @"113424"};
+NSString* ids[] = { @"697632", @"697642", @"697652", @"697662", @"697672", @"697682", @"697692", @"697702", @"697712", @"697722", @"697732",
+	@"697742", @"697752", @"697762", @"697772", @"697782", @"697792", @"697802", @"697812", @"697832"};
 
 std::string desc[] = { "Kill 25 enemy units", "Kill 50 enemy units", "Kill 100 enemy units", "Kill 500 enemy units", "Kill 1000 enemy units",
 "Collect 300 gold", "Collect 500 gold", "Level up a unit to level 3", "Level up a unit to level 4", "Level up your leader", "Kill 3 units in a turn",
@@ -88,9 +88,9 @@ void of_init(void)
 																	  andChallengeDelegate:nil
 																   andNotificationDelegate:nil];
 	
-	[OpenFeint initializeWithProductKey:@"WDYPKxGL2aP5ujZFrnKmQ" 
-							  andSecret:@"WoRs8Pt7ch9r0Re1UI7Zx5d62gezqfHDLPy4t5suQE" 
-						 andDisplayName:@"Wesnoth" 
+	[OpenFeint initializeWithProductKey:@"4prOi2sZvRcsxxZPtpd8yA" 
+							  andSecret:@"RflVDPwcxH6W5xqKXih2djlqpxODbxCDcNB4rTyQXs" 
+						 andDisplayName:@"Wesnoth New Era" 
 							andSettings:settings 
 						   andDelegates:delegates];
 	
