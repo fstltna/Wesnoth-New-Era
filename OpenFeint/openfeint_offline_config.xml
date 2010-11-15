@@ -1,6 +1,6 @@
 <resources>
 <game_profile_page_info>
-  <has_chat_rooms>false</has_chat_rooms>
+  <has_chat_rooms>true</has_chat_rooms>
   <short_name>wesnothnera</short_name>
   <icon_url>/uploads/application_descriptions/h_icons/50/75/cb/a8/36582/Icon_copy.png</icon_url>
   <timestamp>2010-11-15 03:19:12</timestamp>
@@ -8,7 +8,7 @@
   <suggestions_topic_id>465632</suggestions_topic_id>
   <has_achievements>true</has_achievements>
   <has_leaderboards>true</has_leaderboards>
-  <has_featured_application>false</has_featured_application>
+  <has_featured_application>true</has_featured_application>
   <has_ipurchase>true</has_ipurchase>
   <name>Wesnoth New Era</name>
   <id>174562</id>
