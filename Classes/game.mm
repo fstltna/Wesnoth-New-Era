@@ -2429,7 +2429,7 @@ int SDL_main(int argc, char** argv)
 //		exe_dir = "/Users/kyle/Desktop/wesnoth FREE/res";
   #else
 	#ifdef __IPAD__
-		exe_dir = "/Users/fstltna/Documents/Wesnoth-vers2/res";
+		exe_dir = "/Users/fstltna/Documents/wesnoth-ne-hd/res"; // ZZZ
 	#else
 		exe_dir = "/Volumes/OSX/Users/kyle/iwesnoth/trunk/res";
 	#endif

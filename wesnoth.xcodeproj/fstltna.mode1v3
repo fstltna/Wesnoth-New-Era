@@ -328,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A52ED024128C2B5B00E17B5A</string>
+										<string>A52EECAC1290A1A000E17B5A</string>
 										<key>history</key>
 										<array>
 											<string>A5107EFA12639DC20082559E</string>
@@ -344,7 +344,7 @@
 											<string>A5107F7612654BB50082559E</string>
 											<string>A5107F7C12654E920082559E</string>
 											<string>A5107F7D12654E920082559E</string>
-											<string>A52EB379128C2ADB00E17B5A</string>
+											<string>A52ED024128C2B5B00E17B5A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,14 +356,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {465, 251}}</string>
+								<string>{{0, 0}, {465, 242}}</string>
 								<key>RubberWindowFrame</key>
 								<string>327 481 788 504 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>251pt</string>
+							<string>242pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -376,14 +376,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 256}, {465, 207}}</string>
+								<string>{{0, 247}, {465, 216}}</string>
 								<key>RubberWindowFrame</key>
 								<string>327 481 788 504 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>207pt</string>
+							<string>216pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -402,9 +402,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A52ED003128C2B3700E17B5A</string>
+				<string>A52EECAD1290A1A000E17B5A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A52ED004128C2B3700E17B5A</string>
+				<string>A52EECAE1290A1A000E17B5A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -542,9 +542,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A56F5F32126375F10073040A</string>
-		<string>/Users/fstltna/Documents/Wesnoth-vers2/wesnoth.xcodeproj</string>
+		<string>/Users/fstltna/Documents/wesnoth-ne-hd/wesnoth.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>327 481 788 504 0 0 1920 1058 </string>
@@ -624,7 +623,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>A56F5F32126375F10073040A</string>
-				<string>A52ED005128C2B3700E17B5A</string>
+				<string>A52EECAF1290A1A000E17B5A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
