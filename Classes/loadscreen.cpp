@@ -299,7 +299,7 @@ loadscreen::loadscreen(CVideo &screen, const int &percent):
 	prcnt_(percent)
 {
 //	int randNum = (rand() % 8) + 1;
-	int randNum = (rand() % 11) + 1;	// MG
+	int randNum = (rand() % 11) + 1;	// MG ZZZ
 	char num[3];
 	sprintf(num, "%d", randNum);
 	std::string file = "misc/loading";
