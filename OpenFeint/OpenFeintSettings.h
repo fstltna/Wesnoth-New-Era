@@ -1,20 +1,16 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// 
-///  Copyright 2009 Aurora Feint, Inc.
-/// 
-///  Licensed under the Apache License, Version 2.0 (the "License");
-///  you may not use this file except in compliance with the License.
-///  You may obtain a copy of the License at
-///  
-///  	http://www.apache.org/licenses/LICENSE-2.0
-///  	
-///  Unless required by applicable law or agreed to in writing, software
-///  distributed under the License is distributed on an "AS IS" BASIS,
-///  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-///  See the License for the specific language governing permissions and
-///  limitations under the License.
-/// 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Copyright 2009-2010 Aurora Feint, Inc.
+// 
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//  
+//  	http://www.apache.org/licenses/LICENSE-2.0
+//  	
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 
 #pragma once
 
@@ -59,14 +55,20 @@ extern const NSString* OpenFeintSettingDisableUserGeneratedContent;
 
 ////////////////////////////////////////////////////////////
 ///
-/// @type		NSNumber bool
-/// @default	false 
-/// @behavior	If this is true, then when OpenFeint displays achievement, score, or challenge notifications,
-///				they will drop down from the top of the screen instead of popping up from the bottom of the
-///				screen.  Useful if you are using the bottom of the screen as a critical area.
+/// @type		NSNumber ENotificationPosition. see OpenFeint.h
+/// @default	ENotificationPosition_TOP_LEFT on iPad,  ENotificationPosition_TOP on iPhone.
+/// @behavior	iPhone:
+///				ENotificationPosition_TOP:			iPhone notifications show up on the top of the screen
+///				ENotificationPosition_BOTTOM:		iPhone notifications show up on the bottom of the screen
+///				
+///				iPad:
+///				ENotificationPosition_BOTTOM_LEFT:	iPad notifications show up on the lower left corner of the screen
+///				ENotificationPosition_TOP_LEFT:		iPad notifications show up on the top left corner of the screen
+///				ENotificationPosition_BOTTOM_RIGHT:	iPad notifications show up  on the bottom right corner of the screen
+///				ENotificationPosition_TOP_RIGHT:	iPad notifications show up on the top right of the screen
 ///
 ////////////////////////////////////////////////////////////
-extern const NSString* OpenFeintSettingInvertNotifications;
+extern const NSString* OpenFeintSettingNotificationPosition;
 
 ////////////////////////////////////////////////////////////
 ///
@@ -166,4 +168,25 @@ extern const NSString* OpenFeintSettingDisableCloudStorageCompression;
 ///
 ////////////////////////////////////////////////////////////
 extern const NSString* OpenFeintSettingOutputCloudStorageCompressionRatio;
+
+////////////////////////////////////////////////////////////
+///
+/// @type		NSString
+/// @default	nil
+/// @behavior	If this setting is present and set to YES then OpenFeint will output
+///             cloud storage blobs without the compression header.   This is intended for compatibiity with products
+///             already using the older compression, which did not include a header.   This should not be enabled for
+///             any new projects.
+///
+////////////////////////////////////////////////////////////
+extern const NSString* OpenFeintSettingCloudStorageLegacyHeaderlessCompression;
+
+////////////////////////////////////////////////////////////
+/// @type		NSNumber bool
+/// @default	no
+/// @behavior	If this is marked yes, then OpenFeint will post achievement updates and leaderboard updates
+///				to both OpenFeint server and if there is a mapping in OFGameCenter.plist, also post them to
+///				GameCenter.
+////////////////////////////////////////////////////////////
+extern const NSString* OpenFeintSettingGameCenterEnabled;
 

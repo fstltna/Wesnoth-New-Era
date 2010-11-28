@@ -18,6 +18,12 @@
 
 #include "OFDependencies.h"
 
+//macro to mark user facing strings that may need localization
+//error logs are not included
+#define OFLOCALSTRING(x) x
+//just a note to indicate something the localizer should know
+#define OFLOCALIZECOMMENT(x) 
+
 #ifdef __cplusplus
 	#include "OFBase.h"
 	#include "OFSmartObject.h"

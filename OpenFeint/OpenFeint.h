@@ -1,26 +1,24 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// 
-///  Copyright 2009 Aurora Feint, Inc.
-/// 
-///  Licensed under the Apache License, Version 2.0 (the "License");
-///  you may not use this file except in compliance with the License.
-///  You may obtain a copy of the License at
-///  
-///  	http://www.apache.org/licenses/LICENSE-2.0
-///  	
-///  Unless required by applicable law or agreed to in writing, software
-///  distributed under the License is distributed on an "AS IS" BASIS,
-///  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-///  See the License for the specific language governing permissions and
-///  limitations under the License.
-/// 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Copyright 2009-2010 Aurora Feint, Inc.
+// 
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//  
+//  	http://www.apache.org/licenses/LICENSE-2.0
+//  	
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 
 #pragma once
 
 #ifndef __cplusplus
 	#error "OpenFeint requires Objective-C++. In XCode, you can enable this by changing your file's extension to .mm"
 #endif
+
+//This is Feature 1 branch and I hope it works this time
 
 #import "OFDependencies.h"
 #import "OFDelegatesContainer.h"
@@ -33,11 +31,30 @@
 @class OFRootController;
 @class OFUser;
 
+class OFReachabilityObserver;
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///
 /// Public OpenFeint API
 ///
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Defines where notifications can appear on the screen.  4 Positions are available for ipad, and 2 for iphone.  For
+/// iphone use ENotificationPosition_TOP and ENotificationPosition_BOTTOM.  For iPad use ENotificationPosition_TOP_LEFT, 
+/// ENotificationPosition_BOTTOM_LEFT, ENotificationPosition_BOTTOM_RIGHT, ENotificationPosition_TOP_RIGHT.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+enum ENotificationPosition
+{
+	ENotificationPosition_TOP = 0,
+	ENotificationPosition_BOTTOM,
+	ENotificationPosition_TOP_LEFT = ENotificationPosition_TOP,
+	ENotificationPosition_BOTTOM_LEFT = ENotificationPosition_BOTTOM,
+	ENotificationPosition_TOP_RIGHT,
+	ENotificationPosition_BOTTOM_RIGHT,
+	ENotificationPosition_COUNT,
+};
+
 @interface OpenFeint : NSObject<UIActionSheetDelegate, CLLocationManagerDelegate, OFCallbackable>
 {
 @private
@@ -54,7 +71,7 @@
 	OFPoller* mPoller;
 	UIInterfaceOrientation mPreviousOrientation;
 	UIInterfaceOrientation mDashboardOrientation;
-	bool mInvertedNotifications;
+	ENotificationPosition mNotificationPosition;
 	bool mPreviousStatusBarHidden;
 	NSTimeInterval mPollingFrequencyBeforeResigningActive;
 	struct sqlite3* mOfflineDatabaseHandle;
@@ -73,13 +90,25 @@
 	
 	OFLocation* mLocation;
 	OFUser* mCachedLocalUser;
-
+    NSString* mProductKey;
+    
+	NSString* mSessionId;
+	NSDate* mSessionStartDate;
+    
+    BOOL mIsUsingGameCenter;
+	BOOL mDashboardVisible;
+    
     struct {
 		unsigned int isConfirmAccountFlowActive:1;
 		unsigned int hasDeferredLoginDelegate:1;
 		unsigned int isOpenFeintDashboardInOnlineMode:1;
+		unsigned int isBootstrapInProgress:1;
     } _openFeintFlags;
+	
+	OFReachabilityObserver* reachabilityOb;
+	BOOL appNeedsGetLocationOnForeground;
 }
+@property (nonatomic, retain) NSString* mProductKey;
 
 ////////////////////////////////////////////////////////////
 ///
@@ -167,6 +196,8 @@
 ////////////////////////////////////////////////////////////
 + (void)applicationWillResignActive;
 + (void)applicationDidBecomeActive;
++ (void)applicationDidEnterBackground;
++ (void)applicationWillEnterForeground;
 
 ////////////////////////////////////////////////////////////
 ///
@@ -233,5 +264,10 @@
 ///
 ////////////////////////////////////////////////////////////
 + (void)loginWithUserId:(NSString*)openFeintUserId onSuccess:(const OFDelegate&)onSuccess onFailure:(const OFDelegate&)onFailure;
+
+////////////////////////////////////////////////////////////
+/// @internal
+////////////////////////////////////////////////////////////
+@property (nonatomic, assign) BOOL dashboardVisible;
 
 @end
