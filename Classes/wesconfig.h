@@ -25,7 +25,7 @@
 #ifdef VERSION
   #undef VERSION
 #endif
-#define VERSION "1.6.3"
+#define VERSION "newera-1.0.0"
 
 #ifndef PACKAGE
 #define PACKAGE "wesnoth"
@@ -37,6 +37,6 @@
  * It is only to be updated upon changes that break *all* saves/replays
  * (break as in crash Wesnoth, not compatibility issues like stat changes)
  */
-#define MIN_SAVEGAME_VERSION "1.3.10"
+#define MIN_SAVEGAME_VERSION "newera-1.0.0"
 
 #endif
