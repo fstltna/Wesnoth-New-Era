@@ -51,12 +51,12 @@ public:
 	
 	operator const std::string&() const
 	{
-		assert(data_);
+//		assert(data_);
 		return data_->str;
 	}
 
 	const char* c_str() const {
-		assert(data_);
+//		assert(data_);
 		return data_->str.c_str();
 	}
 	
@@ -173,7 +173,11 @@ public:
 		return get().compare(start, end, cmpStr);
 	}
 	
-	const std::string& get() const { assert(data_); return data_->str; }
+	const std::string& get() const 
+    { 
+//        assert(data_); 
+        return data_->str; 
+    }
 
 	void clear();
 	void set(const std::string &str);
