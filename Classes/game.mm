@@ -2389,7 +2389,7 @@ int SDL_main(int argc, char** argv)
 	init_custom_malloc();
 //#endif
 	
-	memory_profiler_start("/Users/kyle/wesnoth");
+	memory_profiler_start("/Users/fstltna/wesnoth"); // FIX ME
 	
 	
 	
@@ -2429,7 +2429,7 @@ int SDL_main(int argc, char** argv)
 //		exe_dir = "/Users/kyle/Desktop/wesnoth FREE/res";
   #else
 	#ifdef __IPAD__
-		exe_dir = "/Users/fstltna/Documents/wesnoth-ne-hd/res"; // ZZZ
+		exe_dir = "/Users/fstltna/Documents/wesnoth-ne-hd/res_iPad"; // ZZZ
 	#else
 		exe_dir = "/Volumes/OSX/Users/kyle/iwesnoth/trunk/res";
 	#endif
