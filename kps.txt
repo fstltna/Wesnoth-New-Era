@@ -1,0 +1,230 @@
+src/actions.cpp:				// KP: add kills for player
+src/actions.cpp:	// KP: check for achievements
+src/ai.cpp:	// KP: default to update UI at 20fps normally, and only at 4fps during AI thinking
+src/ai_attack.cpp:	raise_user_interact(250);	// KP: 4fps
+src/animated.hpp:// KP: specialization for image::locator to add required cache functions
+src/animated.hpp:		// KP: added cache functions
+src/animated.hpp:	// KP: added cache functions
+src/animated.i:// KP: added specialized functions for image::locator to support cache functions
+src/asserts.hpp:#define BREAKPOINT() __debugbreak()
+src/asserts.hpp:#define WES_HALT() if (true) { BREAKPOINT(); exit(1); } else (void)0
+src/asserts.hpp:#define BREAKPOINT() asm("int3")
+src/asserts.hpp:#define WES_HALT() if (true) { BREAKPOINT(); abort(); } else (void)0
+src/asserts.hpp:#define BREAKPOINT()
+src/builder.cpp:			parse_config(cfg);		// KP: takes about 5s on PC, forever on device
+src/builder.cpp:		// KP: avoid nested copy constructors and destructors, and do the loading after a blank entry is inserted...
+src/builder.hpp:		// KP: added cache functions
+src/builder.hpp:		// KP: added cache functions
+src/builder.hpp:				// KP: avoid nested copy constructors and destructors, and do the loading after a blank entry is inserted...
+src/builder.hpp:		// KP: added cache functions
+src/builder.hpp:		// KP: added cache functions
+src/builder.hpp:				// KP: avoid nested copy constructors and destructors, and do the loading after a blank entry is inserted...
+src/builder.hpp:	// KP: new cache functions
+src/config.cpp:	// KP: with AssocVector, iterators are invalided on erase
+src/config.hpp:	// KP: new cache functions
+src/config_cache.cpp:		// KP: try to use a memory stream on iPhone first, to buffer the data in memory
+src/config_cache.cpp:		// KP: for iPhone, do not use the full path, remove the exe_dir
+src/config_cache.cpp:// KP: cache functions
+src/config_cache.hpp:// KP: cache functions
+src/construct_dialog.cpp:		// KP: looks ugly when too big...
+src/construct_dialog.cpp:	// KP: hack to get bigger context and in-game menus
+src/construct_dialog.cpp:			// KP: redraw every frame for openGL rendering
+src/construct_dialog.cpp:		// KP: forget it... make it a fullscreen dialog then
+src/construct_dialog.cpp:		// KP: dirty hacks
+src/construct_dialog.cpp:	if (dim.interior.y == 0 && dim.menu_y < 100)	// KP: make sure not to adjust for the attack selection with 3 attacks...
+src/construct_dialog.cpp:		// KP: fixed for iphone
+src/construct_dialog.cpp:	// KP: dirty hacks for custom layouts
+src/construct_dialog.cpp:					info.key[SDLK_ESCAPE] || info.key[SDLK_KP_ENTER];
+src/construct_dialog.cpp:	if((((!info.key_down && (info.key[SDLK_RETURN] || info.key[SDLK_KP_ENTER])) || info.double_clicked) &&
+src/controller_base.cpp:	// KP: added megamap popover
+src/controller_base.cpp:	// KP: moved down here to draw buttons over everything
+src/controller_base.cpp:	// KP: moved at the end here, to make sure everything is drawn
+src/controller_base.hpp:// KP: added
+src/dialogs.mm:		// KP: check of heroic AMLA unit
+src/dialogs.mm:	// KP: free all cache memory, to make room for parsing the save summaries
+src/dialogs.mm:		// KP: no in-game access to help
+src/display.cpp:		// KP: make sure the GUI uses the normal small buttons
+src/display.cpp:		// KP: make buttons volatile, so they are always drawn
+src/display.cpp:	// KP: since terrain doesn't animate on iPhone, and isn't effected by tod, we can use a cache, speeding up the draw loop by 15%
+src/display.cpp:						// @TODO: KP: make sure to only draw once, not multiple times!
+src/display.cpp:	// KP: cache it for next time
+src/display.cpp:	// KP: support for TOD coloring
+src/display.cpp:		LAYER_TERRAIN_TMP_BG,	// KP: added this pass, for things like footsteps
+src/display.cpp:						// KP: added terrain atlas rendering
+src/display.cpp:								// KP: hack to re-do health/xp bars...
+src/display.cpp:		// KP: make sure labels are clipped to the map area, so floating dmg doesn't go up into status bar
+src/display.cpp:	// KP: labels always drawn to the screen...
+src/display.cpp:	// KP: buttons are already created at this point...
+src/display.cpp:	// KP: make sure status is redrawn
+src/display.cpp:	// KP: handle global redraw request
+src/display.cpp:	// KP: highly unlikely a map is smaller than the iphone screen, so skip this...
+src/display.cpp:	static const int time_between_draws = 20; // KP: 30fps
+src/display.cpp:	// KP: ensure responsive map scrolling
+src/display.cpp:	// KP: update scroll velocity
+src/display.cpp:			// KP: draw megamap if needed
+src/display.cpp:	// KP: iPhone keeps a fullscreen minimap
+src/display.cpp:	// KP: invalidate instead
+src/display.cpp:	// KP: okay... here we go...
+src/display.cpp:			// KP: preserve aspect ratio for unit images
+src/display.cpp:				// KP: no need to backup surface...
+src/display.cpp:					  // KP: compile problems...
+src/display.hpp:	// KP: a version for the megamap
+src/display.hpp:	// KP: added enlarged minimap for iPhone
+src/display.hpp:	// KP: added variables for scrolling that gradually slows down over time
+src/display.hpp:		// KP: added support for terrain atlas rendering
+src/display.hpp:		// KP: added support for terrain atlas rendering
+src/display.hpp:		// KP: added support to draw reversed, to cut down required memory for unit images by 1/2
+src/display.hpp:		// KP: added the +10, so that more terain_bg can be piled on, eg transitions, tree edges
+src/display.hpp:	// KP: added cache for get_terrain_images() function
+src/events.cpp:					// KP: removed SDL double clicks
+src/filesystem.cpp:	// KP: avoid using file streams on iPhone
+src/filesystem.cpp:		// KP: do not calculate checksums on iPhone, because data can't be modified anyways
+src/font.cpp://	font_map.reserve(0x10000);	// KP: 65,536 ints = 262,144k
+src/font.cpp:	// KP: I don't understand the point of chunks_, can't we just keep the utf8 str_ and use the proper TTF functions??
+src/font.cpp:		// KP: this makes text look ugly?
+src/font.cpp:		// KP: maintain compatability with old style
+src/font.cpp:	// KP: fix crash bug
+src/font.cpp:				free_cache_texture(surf_);	// KP: clear texture cache
+src/font.cpp:				disp->invalidate_locations_in_rect(rect);	// KP: added for OpenGL
+src/font.cpp:// KP: helper functions to clear caches
+src/game.mm:		// KP: need to show loading screen right away...
+src/game.mm:	// KP: changed to load on demand
+src/game.mm:	// KP: added tutorial to campaign menu
+src/game.mm:		// KP: avoid long loads at startup
+src/game.mm:			// KP: commenting this out is a little tricky... if the terrain cache doesn't already exist, it will make it invalid
+src/game.mm:			// KP: achievements @TODO: we can't display the in-game dialog at this point, but OpenFeint will still pop up...
+src/game.mm:	// KP: Initialize SDL_ttf 
+src/game.mm:		// KP: pretend that we already started up, so we don't get a "failed to launch in time" error
+src/game.mm:		// KP: autosave if in a singleplayer game (fixes #11)
+src/game_config.cpp:		// KP: get rid of trailing \n
+src/game_display.cpp:	// KP: moved this here to refresh background before drawing
+src/game_display.cpp:	// KP: changed to just one filled surface, but it is not actually rendered... it is converted to openGL calls when it is detected
+src/game_display.cpp:	// KP: change this to clip to map area
+src/game_preferences.mm:	// KP: added for saving achievements
+src/game_preferences.mm:	// KP: no saving replays on iPhone
+src/game_preferences.mm:	// KP: save 14% cpu
+src/game_preferences.mm:// KP: checks if the achievement has been earned already
+src/game_preferences.mm:// KP: records the achievement
+src/gamestatus.cpp:		// KP: clear all "map_data" values, for next save
+src/gamestatus.cpp:	// KP: do not save map data summary, because it takes too long to parse
+src/gamestatus.cpp:	// KP: do not save map data summary, because it takes too long to parse
+src/generate_report.cpp:		// KP: always add traits here too
+src/generate_report.cpp:		// @TODO: KP: check why there is a trailing , when not needed
+src/gettext.hpp:// KP: commented out
+src/help.cpp:// KP: added
+src/help.cpp:	// KP: moved help cache loading to here
+src/help.cpp:			hb.set_dirty(true);	// KP: added here
+src/help.cpp:			disp.invalidate_all();	// KP: added here
+src/hotkeys.cpp:				// TODO: (KP) verify that this is correct
+src/iSound.mm:		// KP: don't release here, just let it complete...
+src/iSound.mm:	// KP: we no longer stop the old sound, let it mix!
+src/image.cpp:	// KP: don't waste memory on this
+src/image.cpp:	// KP: optimization
+src/image.hpp:			// KP: added cache functions
+src/image.hpp:	public:		// KP: bend the rules a bit to make life easier
+src/image.hpp:		// KP: added cache functions
+src/intro.cpp:		// KP: do not cache this!
+src/intro.cpp:	// KP: shift the image up a bit, based on what is covered by the text
+src/intro.cpp:			// KP: fix progress images
+src/intro.cpp:					if(key[SDLK_RETURN] || key[SDLK_KP_ENTER] || key[SDLK_SPACE] || mouse_flags) {
+src/intro.cpp:	// KP: hmmmmm... how to blur in openGL? just fade instead?
+src/intro.cpp:		const bool keydown = key[SDLK_SPACE] || key[SDLK_RETURN] || key[SDLK_KP_ENTER];
+src/intro.cpp:	// KP: hmmm... it draws everything black, but doesn't update the screen.... ignore it for now...
+src/loadscreen.hpp:		// KP: flag to prevent endless recursion
+src/map_location.hpp:	// KP: added cache functions
+src/marked-up_text.cpp:	// KP: 20100228: obey clipping rectangle
+src/marked-up_text.cpp:	textureRenderFlags flags = DRAW;	// KP: maybe this will change later for text...
+src/marked-up_text.hpp:// KP: added text caching
+src/memory_wrapper.mm:// KP: using a project setting define, eg DISABLE_POOL_ALLOC, causes it to recompile the whole project, which takes very long...
+src/menu_events.cpp:		&& (info.key[SDLK_RETURN] || info.key[SDLK_KP_ENTER])))) {
+src/menu_events.cpp:			// KP: no in-game access to help
+src/minimap.cpp:					// KP: do NOT cache it, just the mini image is cached...
+src/minimap.cpp:						// KP: do NOT cache it
+src/mouse_events.cpp:	// KP: moved to left click up
+src/mouse_events.cpp:		// KP: if we double tap on the selected unit, then always display the context menu
+src/mouse_events.cpp:		// KP: now, we just send another tap if a unit is already selected, the user probably tapped too fast...
+src/mouse_events.cpp:	// KP: code moved here from mouse move
+src/mouse_events.cpp:	// KP: end code move
+src/mouse_handler_base.cpp:		// KP: fixes #5
+src/mouse_handler_base.cpp:			// KP: now, a click on the minimap causes the megamap to popup
+src/multiplayer_ui.cpp:	if((event.keysym.sym == SDLK_RETURN || event.keysym.sym == SDLK_KP_ENTER) && !entry_textbox_.text().empty()) {
+src/play_controller.cpp:	// KP: added
+src/play_controller.cpp:	} else if(event.key.keysym.sym == SDLK_RETURN || event.key.keysym.sym == SDLK_KP_ENTER) {
+src/playcampaign.cpp:	// KP: added try/catch to autosave game on quit (fixes #11)
+src/playmp_controller.cpp:	// KP: disable achievement stuff
+src/playsingle_controller.cpp:	// KP: achievement stuff
+src/playsingle_controller.cpp:	// KP: check mission achievements here
+src/playsingle_controller.cpp:	// KP: show loading screen now, this will also free cache memory
+src/poolalloc.cpp:// KP: override new/delete too, to work with std containers
+src/poolalloc.cpp:// KP: end
+src/preferences_display.cpp:	// KP: not used on iPhone
+src/random.cpp:	// KP: changed to support no replay data
+src/random.cpp:	// KP: changed to support no replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/replay.cpp:	// KP: added flag to ignore replay data
+src/sdl_utils.cpp:// KP: included as temp fix
+src/sdl_utils.cpp:			// KP: changed to match iPhone ABGR8888
+src/sdl_utils.cpp:// @TODO: KP: this function is pretty inefficient... try SDL optimized blitters
+src/sdl_utils.cpp:// KP: temp fix...
+src/sdl_utils.hpp:// KP: added texture cache functions
+src/sdl_utils.hpp:				SDL_FreeSurface(surf);		// KP: decreases refcount
+src/sdl_utils.hpp:		surface_.assign(surf);	// KP: assigning always releases the old resource, and replaces it with the new one
+src/sdl_utils.hpp:// KP: remastered for openGL CVideo support
+src/shared_string.cpp:// KP: default allocator changed to tcmalloc!
+src/shared_string.cpp:	fnd = gStringPool().lower_bound(&str);	// KP: use lower bound for quick insert
+src/show_dialog.cpp:// KP: global variable that signals we need a full redraw
+src/show_dialog.cpp:		// KP: fade instead of blur...
+src/show_dialog.cpp:	// KP: unfortunately, undrawing doesn't work now since we don't have easy access to the framebuffer pixels with openGL
+src/skiplist_map.hpp:// KP: default allocator changed to tcmalloc!
+src/soundsource.cpp:// @TODO: KP: disabled sound sources because currently they loop immediately			
+src/terrain.cpp:	// KP: iPhone uses TINY_GUI, but don't scale down terrain
+src/terrain_translation.hpp:		// KP: added cache functions
+src/terrain_translation.hpp:		// KP: added cache functions
+src/text.cpp:			// KP: code from elsewhere
+src/text.cpp:	// KP: for iPhone, forget pango and just use SDL_ttf
+src/text.cpp:			// KP: code from elsewhere
+src/titlescreen.cpp:									key[SDLK_RETURN] || key[SDLK_KP_ENTER] ;
+src/titlescreen.cpp:	static int bgNum = -1;		// KP: the background will only change once per game load
+src/titlescreen.cpp:				// KP: do not cache this
+src/titlescreen.cpp:		// KP: redraw
+src/tooltips.cpp:		// KP: also invalidate the panel
+src/tstring.hpp:// KP: remove t_string overhead, since only one language is supported
+src/unit.cpp:	// KP: the purples are hard to read on iPhone...
+src/unit.cpp:		// KP: optimize
+src/unit.cpp:		// KP: optimize
+src/unit.hpp:	// KP: why does this have it's own config? can't it point to the base unit data cfg??
+src/unit.hpp:	// KP: all int -> short, saved 
+src/unit.hpp:	bool slowed_;	// KP: added for optimization
+src/unit_animation.cpp:	// KP: fixed below to work with AssocVector
+src/unit_display.cpp:	// KP: added panel redraw
+src/unit_frame.cpp:	// KP: use our texture map info
+src/video.cpp:// KP: global redraw request flag lives here
+src/video.cpp:// KP: surface -> texture cache
+src/video.cpp:// KP: optimized terrain blitting LRU cache
+src/video.cpp:		// KP: specialized terrain cache blitter
+src/video.cpp:		// KP: 20100228: clipping rects are now merged...
+src/video.cpp:	// KP: added
+src/video.cpp:	// KP: free all caches now
+src/video.hpp:// KP: helper function to free all cache memory
+wesnoth.xcodeproj/fstltna.pbxuser:		activeSDKPreference = iphonesimulator4.2;
