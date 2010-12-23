@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* wesnoth */ = {
+		activeExec = 0;
+		executables = (
+			A517FCBB12C3557C00FF028B /* wesnoth */,
+		);
+	};
+	2715C4AD1115C503007BF081 /* wesnoth HTTT */ = {
+		activeExec = 0;
+		executables = (
+			A517FCBD12C3557C00FF028B /* wesnoth HTTT */,
+		);
+	};
+	2715EE3B1115C503007BF081 /* wesnoth TSG */ = {
+		activeExec = 0;
+		executables = (
+			A517FCBE12C3557C00FF028B /* wesnoth TSG */,
+		);
+	};
+	271D21F91111CFFD00355085 /* wesnoth sim */ = {
+		activeExec = 0;
+		executables = (
+			A517FCBC12C3557C00FF028B /* wesnoth sim */,
+		);
+	};
+	278E5BF7115DDAE100389C8B /* wesnoth-iPad */ = {
+		activeExec = 0;
+		executables = (
+			A517FCBF12C3557C00FF028B /* wesnoth-iPad */,
+		);
+	};
+	278E61D8115DDCCE00389C8B /* wesnoth-iPad sim */ = {
+		activeExec = 0;
+		executables = (
+			A517FCC012C3557C00FF028B /* wesnoth-iPad sim */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A517FCC012C3557C00FF028B /* wesnoth-iPad sim */;
+		activeTarget = 278E61D8115DDCCE00389C8B /* wesnoth-iPad sim */;
+		codeSenseManager = A51719D412C3561E00FF028B /* Code sense */;
+		executables = (
+			A517FCBB12C3557C00FF028B /* wesnoth */,
+			A517FCBC12C3557C00FF028B /* wesnoth sim */,
+			A517FCBD12C3557C00FF028B /* wesnoth HTTT */,
+			A517FCBE12C3557C00FF028B /* wesnoth TSG */,
+			A517FCBF12C3557C00FF028B /* wesnoth-iPad */,
+			A517FCC012C3557C00FF028B /* wesnoth-iPad sim */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 314791294;
+			PBXWorkspaceStateSaveDate = 314791294;
+		};
+		sourceControlManager = A51719D312C3561E00FF028B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A51719D312C3561E00FF028B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A51719D412C3561E00FF028B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A517FCBB12C3557C00FF028B /* wesnoth */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = wesnoth;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A517FCBC12C3557C00FF028B /* wesnoth sim */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "wesnoth sim";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A517FCBD12C3557C00FF028B /* wesnoth HTTT */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "wesnoth HTTT";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A517FCBE12C3557C00FF028B /* wesnoth TSG */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "wesnoth TSG";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A517FCBF12C3557C00FF028B /* wesnoth-iPad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "wesnoth-iPad";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A517FCC012C3557C00FF028B /* wesnoth-iPad sim */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "wesnoth-iPad sim";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+}
