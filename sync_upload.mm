@@ -168,7 +168,7 @@ int gUploadNum;
 	NSData *postdata = [[NSData alloc] initWithContentsOfFile:uploadUrl]; 
 	
 	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];  
-	[request setURL:[NSURL URLWithString:@"http://www.wesnothsync.com/upload.php?mobile=1"]]; 
+	[request setURL:[NSURL URLWithString:@"http://wesnothne.com/upload.php?mobile=1"]]; 
 	[request setHTTPMethod:@"POST"];
 	NSString *boundary = @"---------------------------14737809831466499882746641449";
 	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];

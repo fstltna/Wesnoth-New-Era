@@ -88,7 +88,7 @@ sync_main *syncMainViewController;
 	NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];  
 	
 	NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];  
-	[request setURL:[NSURL URLWithString:@"http://www.wesnothsync.com/index.php?mobile=1"]];  
+	[request setURL:[NSURL URLWithString:@"http://wesnothne.com/index.php?mobile=1"]];  // ZZZ MG edit
 	[request setHTTPMethod:@"POST"];  
 	[request setValue:postLength forHTTPHeaderField:@"Content-Length"];  
 	[request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];  
