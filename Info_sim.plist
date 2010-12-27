@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Wesnoth</string>
+	<string>Wesnoth NE</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kylepoole.wesnoth</string>
+	<string>com.pocketfiction.wesnothne</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -27,7 +27,7 @@
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationLandscapeRight</string>
 	<key>UIPrerenderedIcon</key>
-	<true/>
+	<false/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 </dict>

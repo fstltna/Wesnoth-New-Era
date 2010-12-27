@@ -27,7 +27,7 @@
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationLandscapeRight</string>
 	<key>UIPrerenderedIcon</key>
-	<true/>
+	<false/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 </dict>
