@@ -6,6 +6,21 @@
 			A517FCBB12C3557C00FF028B /* wesnoth */,
 		);
 	};
+	2709F41E0FFF96230032AA0B /* window.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {607, 11609}}";
+			sepNavSelRange = "{23275, 0}";
+			sepNavVisRange = "{6623, 498}";
+		};
+	};
+	2709F4790FFF96240032AA0B /* game.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 32565}}";
+			sepNavSelRange = "{75009, 0}";
+			sepNavVisRange = "{70151, 533}";
+			sepNavWindowFrame = "{{15, 495}, {750, 558}}";
+		};
+	};
 	2715C4AD1115C503007BF081 /* wesnoth HTTT */ = {
 		activeExec = 0;
 		executables = (
@@ -40,6 +55,10 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = A517FCC012C3557C00FF028B /* wesnoth-iPad sim */;
 		activeTarget = 278E61D8115DDCCE00389C8B /* wesnoth-iPad sim */;
+		addToTargets = (
+			278E61D8115DDCCE00389C8B /* wesnoth-iPad sim */,
+			278E5BF7115DDAE100389C8B /* wesnoth-iPad */,
+		);
 		codeSenseManager = A51719D412C3561E00FF028B /* Code sense */;
 		executables = (
 			A517FCBB12C3557C00FF028B /* wesnoth */,
@@ -57,7 +76,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -72,8 +91,22 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 314791294;
-			PBXWorkspaceStateSaveDate = 314791294;
+			PBXPerProjectTemplateStateSaveDate = 315502950;
+			PBXWorkspaceStateSaveDate = 315502950;
+		};
+		perUserProjectItems = {
+			A53E1D6E12CE31CE004B563C /* PBXTextBookmark */ = A53E1D6E12CE31CE004B563C /* PBXTextBookmark */;
+			A58636C112CD3D8200FA0F73 = A58636C112CD3D8200FA0F73 /* PBXTextBookmark */;
+			A58636C212CD3D8200FA0F73 = A58636C212CD3D8200FA0F73 /* PlistBookmark */;
+			A58636C312CD3D8200FA0F73 = A58636C312CD3D8200FA0F73 /* PlistBookmark */;
+			A58636C412CD3D8200FA0F73 = A58636C412CD3D8200FA0F73 /* PlistBookmark */;
+			A58636C512CD3D8200FA0F73 = A58636C512CD3D8200FA0F73 /* PBXTextBookmark */;
+			A58636C612CD3D8200FA0F73 = A58636C612CD3D8200FA0F73 /* PBXTextBookmark */;
+			A58636C712CD3D8200FA0F73 = A58636C712CD3D8200FA0F73 /* PBXTextBookmark */;
+			A58636C812CD3D8200FA0F73 = A58636C812CD3D8200FA0F73 /* PBXBookmark */;
+			A58636C912CD3D8200FA0F73 = A58636C912CD3D8200FA0F73 /* PBXTextBookmark */;
+			A5B9BC8C12C7E29900CE028A = A5B9BC8C12C7E29900CE028A /* PBXTextBookmark */;
+			A5B9BC8D12C7E29900CE028A = A5B9BC8D12C7E29900CE028A /* PBXTextBookmark */;
 		};
 		sourceControlManager = A51719D312C3561E00FF028B /* Source Control */;
 		userBuildSettings = {
@@ -244,6 +277,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -254,5 +288,160 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+	};
+	A53E1D6E12CE31CE004B563C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CF32607312C005C400B265A9 /* OpenFeint.h */;
+		name = "OpenFeint.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 656;
+		vrLoc = 10707;
+	};
+	A54B08F112C8016100CC936A /* minimal_launch.cfg */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = minimal_launch.cfg;
+		path = "/Users/fstltna/Documents/wesnoth-ne-hd/res_iPad/data/minimal_launch.cfg";
+		sourceTree = "<absolute>";
+	};
+	A58636C112CD3D8200FA0F73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A54B08F112C8016100CC936A /* minimal_launch.cfg */;
+		name = "minimal_launch.cfg: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 271;
+		vrLoc = 0;
+	};
+	A58636C212CD3D8200FA0F73 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 271D26A51111CFFE00355085 /* Info_sim.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIStatusBarHidden,
+		);
+		name = "/Users/fstltna/Documents/wesnoth-ne-hd/Info_sim.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	A58636C312CD3D8200FA0F73 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			UIPrerenderedIcon,
+		);
+		name = "/Users/fstltna/Documents/wesnoth-ne-hd/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	A58636C412CD3D8200FA0F73 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 278E66C4115DDCCF00389C8B /* Info_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/fstltna/Documents/wesnoth-ne-hd/Info_iPad.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	A58636C512CD3D8200FA0F73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2709F4790FFF96240032AA0B /* game.mm */;
+		name = "game.mm: 2503";
+		rLen = 0;
+		rLoc = 75009;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 70151;
+	};
+	A58636C612CD3D8200FA0F73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5B9BC2512C7A7CE00CE028A /* openfeint_offline_config.xml */;
+		name = "openfeint_offline_config.xml: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 674;
+		vrLoc = 0;
+	};
+	A58636C712CD3D8200FA0F73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CF32607512C005C400B265A9 /* OpenFeintSettings.h */;
+		name = "OpenFeintSettings.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 744;
+		vrLoc = 8298;
+	};
+	A58636C812CD3D8200FA0F73 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = CF32607312C005C400B265A9 /* OpenFeint.h */;
+	};
+	A58636C912CD3D8200FA0F73 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CF32607312C005C400B265A9 /* OpenFeint.h */;
+		name = "OpenFeint.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 656;
+		vrLoc = 10707;
+	};
+	A5B9BC2512C7A7CE00CE028A /* openfeint_offline_config.xml */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1547}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 674}";
+			sepNavWindowFrame = "{{38, 474}, {750, 558}}";
+		};
+	};
+	A5B9BC8C12C7E29900CE028A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2709F41E0FFF96230032AA0B /* window.cpp */;
+		name = "window.cpp: 899";
+		rLen = 0;
+		rLoc = 23275;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 4813;
+	};
+	A5B9BC8D12C7E29900CE028A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A5B9BC8E12C7E29900CE028A /* hotkeys.cfg.ignore */;
+		name = "hotkeys.cfg.ignore: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 284;
+		vrLoc = 0;
+	};
+	A5B9BC8E12C7E29900CE028A /* hotkeys.cfg.ignore */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = hotkeys.cfg.ignore;
+		path = "/Users/fstltna/Documents/wesnoth-ne-hd/res/data/core/hotkeys.cfg.ignore";
+		sourceTree = "<absolute>";
+	};
+	CF32607312C005C400B265A9 /* OpenFeint.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {950, 3536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{10707, 656}";
+		};
+	};
+	CF32607512C005C400B265A9 /* OpenFeintSettings.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1027, 2509}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{8298, 744}";
+		};
 	};
 }
