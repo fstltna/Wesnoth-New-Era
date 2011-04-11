@@ -13,6 +13,9 @@
 //  limitations under the License.
 
 #import "UIViewController+TabBar.h"
+// Import GADBannerView’s definition from the SDK
+#import "GADBannerView.h"
+
 
 @class OFTabBarItem;
 @class OFUser;
@@ -21,6 +24,7 @@
 {
 	UIViewController* mLoadingScreen;
 	OFTabBarItem* owningTabBarItem;
+	GADBannerView *bannerView_;
 }
 
 @property (nonatomic, retain) OFTabBarItem* owningTabBarItem;

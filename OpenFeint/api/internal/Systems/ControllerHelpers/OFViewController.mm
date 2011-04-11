@@ -28,11 +28,35 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	
+	NSLog(@"------Saw viewDidLoad");
+	
+	// Create a view of the standard size at the bottom of the screen.
+	bannerView_ = [[GADBannerView alloc]
+                   initWithFrame:CGRectMake(0.0,
+                                            self.view.frame.size.height -
+                                            GAD_SIZE_320x50.height,
+                                            GAD_SIZE_320x50.width,
+                                            GAD_SIZE_320x50.height)];
+	
+	// Specify the ad's "unit identifier." This is your AdMob Publisher ID.
+	bannerView_.adUnitID = @"a14da37864f075e"; // ZZZ change
+	
+	// Let the runtime know which UIViewController to restore after taking
+	// the user wherever the ad goes and add it to the view hierarchy.
+	bannerView_.rootViewController = self;
+	[self.view addSubview:bannerView_];
+	
+	// Initiate a generic request to load it with an ad.
+	[bannerView_ loadRequest:[GADRequest request]];
 
 	UIScrollView* topScrollView = OFViewHelper::findFirstScrollView(self.view);
 	CGSize contentSize = OFViewHelper::sizeThatFitsTight(topScrollView);
 	contentSize.height += 10.f;
 	[topScrollView setContentSize:contentSize];
+	
+	
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -84,6 +108,7 @@
 - (void)dealloc
 {
 	OFSafeRelease(mLoadingScreen);
+	[bannerView_ release];
 	[super dealloc];
 }
 

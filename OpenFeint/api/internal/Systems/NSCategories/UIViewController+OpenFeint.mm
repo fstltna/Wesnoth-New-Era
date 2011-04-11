@@ -18,7 +18,6 @@
 
 #import "UIViewController+OpenFeint.h"
 
-
 @implementation UIViewController (OpenFeint)
 
 - (OFWebNavController *)webNavController {
