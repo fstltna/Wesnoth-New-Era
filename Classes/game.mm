@@ -106,6 +106,8 @@
 #import "sync_login.h"
 #import "sync_main.h"
 
+#import "AirshipManager.h"	// For UrbanAirship integration
+
 extern UIView *gLandscapeView;
 //extern bool gPauseForOpenFeint;
 
@@ -1623,6 +1625,7 @@ void game_controller::load_game_cfg(const bool force)
 
 		main_transaction.lock();
 		
+		minimalLoad = false;	// For UrbanAirship integration
 		if (!minimalLoad)
 		{
 			// clone and put the gfx rules aside so that we can prepend the add-on
@@ -2316,7 +2319,8 @@ static int do_gameloop(int argc, char** argv)
 			}
 			continue;
 		} else if (res == gui::SYNC_SAVES) {
-			game.sync_saves();
+			// game.sync_saves();
+			[AirshipManager showAirshipOnView:gLandscapeView];
 			continue;
 				
 //		} else if(res == gui::SHOW_ABOUT) {
