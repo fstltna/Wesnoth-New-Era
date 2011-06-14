@@ -57,7 +57,7 @@
     [UAStoreFront setOrderBy:UAContentsDisplayOrderPrice ascending:YES];
 
     
-    //for testing uncomment this method
+    //for testing copying uncomment this method
     //[[self sharedInstance] productsDownloadProgress:100.0f count:0];
 }
 
@@ -102,8 +102,21 @@
             [fileManager removeItemAtPath:fullPathWithID error:nil];
         }
         //we need to find a way to reload config afterwards, at the moment the user has to restart the app to get access to the new campaigns
+        //we need to find a way to call reload_changed_game_config()
+        //hope that works
+        [self runBlock];
     }
 }
 
++(void)setReloadBlock:(void(^)(void))rBLock{
+    [[self sharedInstance]setReloadBlock:rBLock];
+}
+-(void)setReloadBlock:(void(^)(void))rBLock{
+    regenConfigBlock = rBLock;
+}
+
+-(void)runBlock{
+    regenConfigBlock();
+}
 
 @end
