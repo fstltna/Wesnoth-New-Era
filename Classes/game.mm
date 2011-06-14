@@ -2320,7 +2320,14 @@ static int do_gameloop(int argc, char** argv)
 			continue;
 		} else if (res == gui::SYNC_SAVES) {
 			// game.sync_saves();
-			[AirshipManager showAirshipOnView:gLandscapeView];
+
+            game_controller* gc = &game;           
+            void (^regenConfigBlock)(void);
+            regenConfigBlock = ^() {
+                gc->reload_changed_game_config();
+            };
+            [AirshipManager setReloadBlock:regenConfigBlock];            
+            [AirshipManager showAirshipOnView:gLandscapeView];
 			continue;
 				
 //		} else if(res == gui::SHOW_ABOUT) {
