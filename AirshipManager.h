@@ -15,6 +15,7 @@
     UIView* view;
     NSMutableDictionary* takeOffOptions;
     NSMutableArray* downloadedProductsQueue;
+    void (^regenConfigBlock)(void);
 }
 
 @property (nonatomic,assign) UIViewController* viewController;
@@ -23,4 +24,7 @@
 @property (nonatomic,retain) NSMutableArray* downloadedProductsQueue;
 +(AirshipManager *)sharedInstance;
 +(void)showAirshipOnView:(UIView*)view;
++(void)setReloadBlock:(void(^)(void))handler;
+-(void)setReloadBlock:(void(^)(void))handler;
+-(void)runBlock;
 @end
