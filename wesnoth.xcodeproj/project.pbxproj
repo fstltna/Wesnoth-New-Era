@@ -3029,7 +3029,6 @@
 		A50A62B4135D2110002D3C97 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A50A62AF135D2110002D3C97 /* README */; };
 		A50A631C135D227D002D3C97 /* UA_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A50A62F1135D227C002D3C97 /* UA_Base64.m */; };
 		A50A6334135D227D002D3C97 /* UA_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A50A62F1135D227C002D3C97 /* UA_Base64.m */; };
-		A50A6350135D2531002D3C97 /* libUAirshipSimulator-1.0.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A50A634F135D2531002D3C97 /* libUAirshipSimulator-1.0.4.a */; };
 		A54AF18F13B24DBF00811C8E /* OFAchievementService.mm in Sources */ = {isa = PBXBuildFile; fileRef = A54AEB6413B24DB800811C8E /* OFAchievementService.mm */; };
 		A54AF19013B24DBF00811C8E /* OFUnlockedAchievementNotificationData.mm in Sources */ = {isa = PBXBuildFile; fileRef = A54AEB6613B24DB800811C8E /* OFUnlockedAchievementNotificationData.mm */; };
 		A54AF19113B24DBF00811C8E /* OFAnnouncementService.mm in Sources */ = {isa = PBXBuildFile; fileRef = A54AEB6913B24DB800811C8E /* OFAnnouncementService.mm */; };
@@ -4780,6 +4779,7 @@
 		A5DD162B1358B7C7005F8C22 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5DD162A1358B7C7005F8C22 /* AirshipConfig.plist */; };
 		A5DD162C1358B7C7005F8C22 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5DD162A1358B7C7005F8C22 /* AirshipConfig.plist */; };
 		A5DD16431358BF9A005F8C22 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DD16421358BF9A005F8C22 /* libz.1.2.3.dylib */; };
+		A5F889F013B2C5A800F554FE /* libUAirship-1.0.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F889EF13B2C5A800F554FE /* libUAirship-1.0.4.a */; };
 		CFF5E49012C00AF4001287F1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF5E48F12C00AF4001287F1 /* AddressBookUI.framework */; };
 		CFF5E49212C00AF4001287F1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF5E49112C00AF4001287F1 /* GameKit.framework */; };
 /* End PBXBuildFile section */
@@ -5753,7 +5753,6 @@
 		A50A62F0135D227C002D3C97 /* UA_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UA_Base64.h; sourceTree = "<group>"; };
 		A50A62F1135D227C002D3C97 /* UA_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UA_Base64.m; sourceTree = "<group>"; };
 		A50A6304135D227C002D3C97 /* UA_Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UA_Reachability.h; sourceTree = "<group>"; };
-		A50A634F135D2531002D3C97 /* libUAirshipSimulator-1.0.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirshipSimulator-1.0.4.a"; sourceTree = "<group>"; };
 		A50A6390135D39E6002D3C97 /* UA_ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UA_ASIProgressDelegate.h; sourceTree = "<group>"; };
 		A50A6395135D3A68002D3C97 /* UA_ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UA_ASIHTTPRequest.h; sourceTree = "<group>"; };
 		A50A6396135D3A76002D3C97 /* UA_ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UA_ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
@@ -7130,6 +7129,7 @@
 		A5DD161F1358B549005F8C22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A5DD162A1358B7C7005F8C22 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		A5DD16421358BF9A005F8C22 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		A5F889EF13B2C5A800F554FE /* libUAirship-1.0.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.0.4.a"; path = "/Users/fstltna/Downloads/Folx/Airship/libUAirship-1.0.4.a"; sourceTree = "<absolute>"; };
 		CFF5E48D12C00AF4001287F1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		CFF5E48F12C00AF4001287F1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		CFF5E49112C00AF4001287F1 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -7220,6 +7220,7 @@
 				A54AF95313B2804F00811C8E /* StoreKit.framework in Frameworks */,
 				A54AF95413B2805F00811C8E /* CoreTelephony.framework in Frameworks */,
 				A54AF95513B2807F00811C8E /* libz.1.2.3.dylib in Frameworks */,
+				A5F889F013B2C5A800F554FE /* libUAirship-1.0.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7250,7 +7251,6 @@
 				A5DD161C1358B50F005F8C22 /* StoreKit.framework in Frameworks */,
 				A5DD16201358B549005F8C22 /* CoreTelephony.framework in Frameworks */,
 				A5DD16431358BF9A005F8C22 /* libz.1.2.3.dylib in Frameworks */,
-				A50A6350135D2531002D3C97 /* libUAirshipSimulator-1.0.4.a in Frameworks */,
 				A54AF8EB13B27EE900811C8E /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8751,7 +8751,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A50A634F135D2531002D3C97 /* libUAirshipSimulator-1.0.4.a */,
 				27B04FC51181AD5F00D70514 /* libsqlite3.0.dylib */,
 				27B04FB51181AD4300D70514 /* OpenGLES.framework */,
 				27B04FA31181AD3700D70514 /* CoreAudio.framework */,
@@ -8775,6 +8774,7 @@
 				A5DD161B1358B50F005F8C22 /* StoreKit.framework */,
 				A5DD161F1358B549005F8C22 /* CoreTelephony.framework */,
 				A5DD16421358BF9A005F8C22 /* libz.1.2.3.dylib */,
+				A5F889EF13B2C5A800F554FE /* libUAirship-1.0.4.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -17678,6 +17678,7 @@
 					"\\\"$(SRCROOT)/FlurryLib\\\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Airship\"",
+					"\"$(SRCROOT)/../../Downloads/Folx/Airship\"",
 				);
 				PRODUCT_NAME = "wesnoth-iPad";
 				SDKROOT = iphoneos;
@@ -17704,6 +17705,7 @@
 					"\\\"$(SRCROOT)/FlurryLib\\\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Airship\"",
+					"\"$(SRCROOT)/../../Downloads/Folx/Airship\"",
 				);
 				PRODUCT_NAME = "wesnoth-iPad";
 				SDKROOT = iphoneos3.2;
@@ -17740,6 +17742,7 @@
 					"\\\"$(SRCROOT)/FlurryLib\\\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Airship\"",
+					"\"$(SRCROOT)/../../Downloads/Folx/Airship\"",
 				);
 				PRODUCT_NAME = "wesnoth-iPad";
 				SDKROOT = iphoneos3.2;
@@ -17776,6 +17779,7 @@
 					"\\\"$(SRCROOT)/FlurryLib\\\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Airship\"",
+					"\"$(SRCROOT)/../../Downloads/Folx/Airship\"",
 				);
 				PRODUCT_NAME = "wesnoth-iPad";
 				SDKROOT = iphoneos3.2;
@@ -17801,6 +17805,7 @@
 					"\\\"$(SRCROOT)/FlurryLib\\\"",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Airship\"",
+					"\"$(SRCROOT)/../../Downloads/Folx/Airship\"",
 				);
 				PRODUCT_NAME = "wesnoth-iPad";
 				SDKROOT = iphoneos3.2;

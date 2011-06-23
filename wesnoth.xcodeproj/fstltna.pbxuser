@@ -193,8 +193,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 330391827;
-			PBXWorkspaceStateSaveDate = 330391827;
+			PBXPerProjectTemplateStateSaveDate = 330466447;
+			PBXWorkspaceStateSaveDate = 330466447;
 		};
 		perUserProjectItems = {
 			A50A6217135BE169002D3C97 /* PBXTextBookmark */ = A50A6217135BE169002D3C97 /* PBXTextBookmark */;
@@ -204,7 +204,6 @@
 			A50A63A9135D3C43002D3C97 /* PBXTextBookmark */ = A50A63A9135D3C43002D3C97 /* PBXTextBookmark */;
 			A50A63AA135D3C43002D3C97 /* PBXTextBookmark */ = A50A63AA135D3C43002D3C97 /* PBXTextBookmark */;
 			A50A63AB135D3C43002D3C97 /* PBXTextBookmark */ = A50A63AB135D3C43002D3C97 /* PBXTextBookmark */;
-			A530F79113A975F500A2DD49 /* PBXTextBookmark */ = A530F79113A975F500A2DD49 /* PBXTextBookmark */;
 			A53E1D7812D69168004B563C /* PBXTextBookmark */ = A53E1D7812D69168004B563C /* PBXTextBookmark */;
 			A54AF96013B2823E00811C8E /* PBXTextBookmark */ = A54AF96013B2823E00811C8E /* PBXTextBookmark */;
 			A57896CC13A6E61B009BA41F /* PBXTextBookmark */ = A57896CC13A6E61B009BA41F /* PBXTextBookmark */;
@@ -237,6 +236,7 @@
 			A5DD16531358C0F1005F8C22 /* PBXTextBookmark */ = A5DD16531358C0F1005F8C22 /* PBXTextBookmark */;
 			A5DD16541358C0F1005F8C22 /* PlistBookmark */ = A5DD16541358C0F1005F8C22 /* PlistBookmark */;
 			A5DD16961358CA10005F8C22 /* PBXTextBookmark */ = A5DD16961358CA10005F8C22 /* PBXTextBookmark */;
+			A5F889F713B2CC8700F554FE /* PBXTextBookmark */ = A5F889F713B2CC8700F554FE /* PBXTextBookmark */;
 		};
 		sourceControlManager = A51719D312C3561E00FF028B /* Source Control */;
 		userBuildSettings = {
@@ -546,16 +546,6 @@
 		sourceDirectories = (
 		);
 	};
-	A530F79113A975F500A2DD49 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = A57896C313A6DE64009BA41F /* AirshipManager.mm */;
-		name = "AirshipManager.mm: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 990;
-		vrLoc = 0;
-	};
 	A53E1D7812D69168004B563C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = CF32607312C005C400B265A9 /* OpenFeint.h */;
@@ -585,9 +575,9 @@
 	};
 	A57896C313A6DE64009BA41F /* AirshipManager.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {768, 1781}}";
+			sepNavIntBoundsRect = "{{0, 0}, {571, 1703}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 235}";
+			sepNavVisRange = "{0, 234}";
 		};
 	};
 	A57896CC13A6E61B009BA41F /* PBXTextBookmark */ = {
@@ -811,12 +801,6 @@
 		name = openfeint_offline_config.xml;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/openfeint_offline_config.xml";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {684, 1547}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 674}";
-			sepNavWindowFrame = "{{38, 474}, {750, 558}}";
-		};
 	};
 	A5B9BC8C12C7E29900CE028A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -971,6 +955,16 @@
 		vrLen = 1081;
 		vrLoc = 3126;
 	};
+	A5F889F713B2CC8700F554FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A57896C313A6DE64009BA41F /* AirshipManager.mm */;
+		name = "AirshipManager.mm: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 234;
+		vrLoc = 0;
+	};
 	CF325F2812C005C300B265A9 /* OFViewController.mm */ = {
 		isa = PBXFileReference;
 		fileEncoding = 4;
@@ -978,12 +972,6 @@
 		name = OFViewController.mm;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/api/internal/Systems/ControllerHelpers/OFViewController.mm";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {614, 1807}}";
-			sepNavSelRange = "{4132, 0}";
-			sepNavVisRange = "{1589, 549}";
-			sepNavWindowFrame = "{{107, 411}, {750, 558}}";
-		};
 	};
 	CF325FB512C005C300B265A9 /* UIViewController+OpenFeint.mm */ = {
 		isa = PBXFileReference;
@@ -992,12 +980,6 @@
 		name = "UIViewController+OpenFeint.mm";
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/api/internal/Systems/NSCategories/UIViewController+OpenFeint.mm";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 430}}";
-			sepNavSelRange = "{1210, 0}";
-			sepNavVisRange = "{0, 1210}";
-			sepNavWindowFrame = "{{38, 474}, {750, 558}}";
-		};
 	};
 	CF32607212C005C400B265A9 /* OFUser.h */ = {
 		isa = PBXFileReference;
@@ -1006,11 +988,6 @@
 		name = OFUser.h;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/include/OFUser.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {873, 3068}}";
-			sepNavSelRange = "{7440, 7}";
-			sepNavVisRange = "{7161, 416}";
-		};
 	};
 	CF32607312C005C400B265A9 /* OpenFeint.h */ = {
 		isa = PBXFileReference;
@@ -1019,11 +996,6 @@
 		name = OpenFeint.h;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/OpenFeint.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {950, 3536}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{10707, 656}";
-		};
 	};
 	CF32607512C005C400B265A9 /* OpenFeintSettings.h */ = {
 		isa = PBXFileReference;
@@ -1032,11 +1004,6 @@
 		name = OpenFeintSettings.h;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/OpenFeintSettings.h";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1027, 2509}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{8298, 744}";
-		};
 	};
 	CF3262C612C005C600B265A9 /* OFCurrentUser.mm */ = {
 		isa = PBXFileReference;
@@ -1045,11 +1012,6 @@
 		name = OFCurrentUser.mm;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/source/OFCurrentUser.mm";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {901, 2847}}";
-			sepNavSelRange = "{4442, 7}";
-			sepNavVisRange = "{5144, 310}";
-		};
 	};
 	CF3262D112C005C600B265A9 /* OFUser.mm */ = {
 		isa = PBXFileReference;
@@ -1058,10 +1020,5 @@
 		name = OFUser.mm;
 		path = "/Users/fstltna/Documents/wesnoth-ne-hd/OpenFeint/source/OFUser.mm";
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 6799}}";
-			sepNavSelRange = "{13971, 7}";
-			sepNavVisRange = "{3581, 395}";
-		};
 	};
 }
